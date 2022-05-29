@@ -1,0 +1,162 @@
+Concept:
+  This will be a single quest, linear text adventure.
+  The player will be given the option of choosing 
+  one of three, pre-made, playable characters.
+  Each character will be based on a level 5 D&D character.
+  The race and class, as well as stats, of each character
+  will be pre-determined. However, the gender and name will
+  be left to the discretion of the player.
+
+The quest: 
+  A band of rogue Kobolds have been disturbing the locals.
+  Vandalizing property, killing livestock, stealing crops,
+  and shiny trinkets, and being a general nuisance.
+  They've been hiding in a local cave, with reports of
+  four being seen in total. Though a leader is suspected.
+  All enemies must be defeated in order to complete your quest.
+
+Win condition:
+- Defeat all enemies
+
+Lose condition:
+- Player dies
+
+Game states:
+- Explore
+- Combat
+- Game Over
+- Game Win
+
+Other notes:
+- Encounters will be non-random.
+- There will be no experience gains/leveling.
+- This IF will not use a traditional game loop. 
+  It will instead use a step-wise motion based 
+  on user input.
+- Game state will change to combat when the player 
+  enters a room with a monster in it (a check will be performed on entrance).
+- Starting equipment/items yet to be determined.
+
+Characters:
+- Strength Build
+
+- Later Version:
+  - Dexterity Build 
+  - Magic User
+
+Shared Character Attributes:
+- Name 
+- Health Points
+- Attack Rating
+- Defense Rating
+- Inventory
+
+Shared Character Methods:
+- Attack
+x Block
+
+Player Specific Attributes:
+- Gender 
+
+Player Specific Methods:
+- Open
+- Use 
+
+Game cycle:
+- Game init runs
+  - Retrieve player name and gender.
+  - player, enemies, items rooms and map are created.
+  - Quest information/exposition is displayed.
+  - Wait for user input to continue.
+  - Print room information.
+- Ask for user input 
+- Parse input for a verb
+- Store the verb in a variable
+- Parse input for a noun to pass as arg to player method (based on the verb)
+- Store noun in a variable 
+- Use a switch statement, passing the verb as the case, and the noun as the arg.
+- Run the corresponding function call
+- Display the results
+- Ask for user input
+- repeat
+
+Functions:
+game: (While game_state = !false)
+  - ask for player input
+  - store input in variable
+  - parse input for verbs and nouns (based on lists for comparison)
+  - if a verb is present
+    - store verb in a variable "verb"
+    - search for a noun and store it in variable "noun"
+    - call corresponding function, passing noun as arg 
+    - (function runs its course)
+  - else 
+    - throw exception
+  - repeat 
+
+- open(object):
+  - check if room has object
+  - if object is present 
+    - open object 
+    - iterate through the object's inventory array
+    - push chest items to player inventory
+    - pop chest items out of chest inventory
+  - else 
+    - throw exception
+
+- use(item):
+  - iterate through player inventory looking for the item 
+  - if the item is in player inventory 
+    - then carry out the corresponding effect
+    - pop item out of player inventory 
+  - else 
+    - throw exception 
+
+- attack(enemy):
+  -  enemy health -= self attack
+
+- combat:
+  - check player health 
+  - if player health > 0
+    - player turn:
+      - ask if player would like to attack, use item or view inventory
+      - if view inventory
+        - iterate through inventory and print items 
+        - return to player turn 
+      - if use item 
+        - run item(item)
+        - end player turn 
+      - if attack 
+        - run attack function 
+        - end turn
+  - else game_state equals false 
+  - check enemy health 
+  - if enemy health > 0 
+    - run enemy attack function 
+    - end enemy turn
+  - else return to exploration state 
+
+Character stats:
+- health: 30
+- attack: 5
+
+enemy stats:
+- kobold 1:
+  - health: 10
+  - attack: 5
+
+- kobold 2:
+  - health: 10
+  - attack: 5
+
+- kobold 3:
+  - health: 10
+  - attack: 5
+
+- kobold 4:
+  - health: 10
+  - attack: 5
+
+- kobold boss:
+  - health: 25
+  - attack: 5
