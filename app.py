@@ -32,7 +32,8 @@ def init():
         "hp": 30,
         "attack": 5,
         "inventory": [],
-        "alive": True 
+        "alive": True,
+        "location": dungeon[0]
     }
 
     print(dungeon[2]["containsEnemy"]["name"])
