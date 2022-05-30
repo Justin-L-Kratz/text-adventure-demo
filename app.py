@@ -1,24 +1,41 @@
-class Player():
-    def __init__(self, name, race, job):
-        self.name = name
-        self.race = race
-        self.job  = job
+game_state = True
 
-def greeter():
-    name = input("What are you to be called? \n")
-    race = input("What race would you like to be? \n")
-    job = input("What is your occupation? \n")
+def init():
+    import rooms
 
-    global player
+    potion1 = {
+        
+    }
 
-    player = Player(name, race, job)
+    dungeon = [
+        rooms.room1,
+        rooms.room2,
+        rooms.room3,
+        rooms.room4,
+        rooms.room5,
+        rooms.room6,
+        rooms.room7,
+        rooms.room8,
+        rooms.room9,
+        rooms.room10,
+        rooms.room11,
+        rooms.room12,
+        rooms.room13,
+        rooms.room14,
+        rooms.room15,
+        rooms.room16,
+        rooms.room17,
+        rooms.room18
+    ]
 
-    intro = "I am {}, a {} {}, at your service!"
-    
-    print(intro.format(player.name, player.race, player.job))
+    player = {
+        "hp": 30,
+        "attack": 5,
+        "inventory": [],
+        "alive": True 
+    }
 
-greeter()
+    print(dungeon[2]["containsEnemy"]["name"])
 
-print(player.name)
-print(player.race)
-print(player.job)
+
+init()   
