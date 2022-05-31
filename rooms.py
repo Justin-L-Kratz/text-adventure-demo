@@ -2,15 +2,14 @@ import enemies
 
 # To-Do's
 # Add room descriptions
-# Add room exits
 
 room1 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
+    "north": 1,
     "east": False,
-    "south": True,
+    "south": False,
     "west": False 
 }
 
@@ -20,16 +19,16 @@ room2 = {
     "description": "Lorem",
     "north": False,
     "east": False,
-    "south": True,
-    "west": True
+    "south": -1,
+    "west": 1
 }
 
 room3 = {
     "containsChest": False,
     "containsEnemy": enemies.kobold0,
     "description": "Lorem",
-    "north": True,
-    "east": False,
+    "north": 1,
+    "east": -1,
     "south": False,
     "west": False
 }
@@ -39,8 +38,8 @@ room4 = {
     "containsEnemy": False,
     "description": "Lorem",
     "north": False,
-    "east": True,
-    "south": False,
+    "east": 1,
+    "south": -1,
     "west": False
 }
 
@@ -49,28 +48,28 @@ room5 = {
     "containsEnemy": False,
     "description": "Lorem",
     "north": False,
-    "east": False,
+    "east": 1,
     "south": False,
-    "west": True
+    "west": -1
 }
 
 room6 = {
     "containsChest": False,
     "containsEnemy": enemies.kobold1,
     "description": "Lorem",
-    "north": True,
+    "north": 1,
     "east": False,
     "south": False,
-    "west": False
+    "west": -1
 }
 
 room7 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
+    "north": 1,
     "east": False,
-    "south": False,
+    "south": -1,
     "west": False
 }
 
@@ -78,19 +77,19 @@ room8 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
+    "north": False,
     "east": False,
-    "south": False,
-    "west": False
+    "south": -1,
+    "west": 1
 }
 
 room9 = {
     "containsChest": True,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
-    "east": False,
-    "south": False,
+    "north": False,
+    "east": -1,
+    "south": 1,
     "west": False
 }
 
@@ -98,18 +97,18 @@ room10 = {
     "containsChest": False,
     "containsEnemy": enemies.kobold2,
     "description": "Lorem",
-    "north": True,
+    "north": -1,
     "east": False,
     "south": False,
-    "west": False
+    "west": 1
 }
 
 room11 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
-    "east": False,
+    "north": 1,
+    "east": -1,
     "south": False,
     "west": False
 }
@@ -118,9 +117,9 @@ room12 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
+    "north": 1,
     "east": False,
-    "south": False,
+    "south": -1,
     "west": False
 }
 
@@ -128,9 +127,9 @@ room13 = {
     "containsChest": True,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
-    "east": False,
-    "south": False,
+    "north": False,
+    "east": 1,
+    "south": -1,
     "west": False
 }
 
@@ -138,48 +137,48 @@ room14 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
-    "east": False,
+    "north": False,
+    "east": 1,
     "south": False,
-    "west": False
+    "west": -1
 }
 
 room15 = {
     "containsChest": False,
     "containsEnemy": enemies.kobold3,
     "description": "Lorem",
-    "north": True,
+    "north": 1,
     "east": False,
     "south": False,
-    "west": False
+    "west": -1
 }
 
 room16 = {
     "containsChest": False,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
+    "north": False,
     "east": False,
-    "south": False,
-    "west": False
+    "south": -1,
+    "west": 1
 }
 
 room17 = {
     "containsChest": True,
     "containsEnemy": False,
     "description": "Lorem",
-    "north": True,
-    "east": False,
+    "north": False,
+    "east": -1,
     "south": False,
-    "west": False
+    "west": 1
 }
 
 room18 = {
     "containsChest": False,
     "containsEnemy": enemies.koboldB,
     "description": "Lorem",
-    "north": True,
-    "east": False,
+    "north": False,
+    "east": -1,
     "south": False,
     "west": False
 }
