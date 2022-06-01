@@ -4,8 +4,25 @@ def init():
     import rooms
 
     potion1 = {
-        
+        "description": "A potion that restores your vitality, leaving you feeling refreshed"
     }
+
+    potion2 = {
+        "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    }
+
+    potion3 = {
+        "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    }
+
+    potion4 = {
+        "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    }
+
+    chest1 = [potion1]
+    chest2 = [potion2]
+    chest3 = [potion3]
+    chest4 = [potion4]
 
     dungeon = [
         rooms.room1,
