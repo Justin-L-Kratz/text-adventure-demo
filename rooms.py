@@ -1,4 +1,5 @@
 import enemies
+import items 
 
 # To-Do's
 # Add room descriptions
@@ -44,7 +45,7 @@ room4 = {
 }
 
 room5 = {
-    "containsChest": True,
+    "containsChest": items.chest1,
     "containsEnemy": False,
     "description": "Lorem",
     "north": False,
@@ -84,7 +85,7 @@ room8 = {
 }
 
 room9 = {
-    "containsChest": True,
+    "containsChest": items.chest2,
     "containsEnemy": False,
     "description": "Lorem",
     "north": False,
@@ -124,7 +125,7 @@ room12 = {
 }
 
 room13 = {
-    "containsChest": True,
+    "containsChest": items.chest3,
     "containsEnemy": False,
     "description": "Lorem",
     "north": False,
@@ -164,7 +165,7 @@ room16 = {
 }
 
 room17 = {
-    "containsChest": True,
+    "containsChest": items.chest4,
     "containsEnemy": False,
     "description": "Lorem",
     "north": False,
