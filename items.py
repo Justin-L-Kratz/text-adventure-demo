@@ -1,17 +1,17 @@
 potion1 = {
-    "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 potion2 = {
-    "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 potion3 = {
-    "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 potion4 = {
-    "description": "A potion that restores your vitality, leaving you feeling refreshed"
+    "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 chest1 = {
