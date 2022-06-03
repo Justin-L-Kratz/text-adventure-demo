@@ -29,10 +29,17 @@ def init():
         "attack": 5,
         "inventory": [],
         "alive": True,
-        "location": dungeon[0]
+        "location": dungeon[4]
     }
 
-    print(dungeon[2]["containsEnemy"]["name"])
-
+    def open():
+        if player["location"]["containsChest"]:
+            if not player["location"]["containsChest"]["open"]:
+                print("You open the chest")
+            else:
+                print("The chest is already open")
+        else:
+            print("You can see no such item in this room")
+        
 
 init()   
