@@ -29,7 +29,7 @@ def init():
         "attack": 5,
         "inventory": [],
         "alive": True,
-        "location": dungeon[4]
+        "location": 0
     }
 
     def open():
@@ -40,6 +40,10 @@ def init():
                 print("The chest is already open")
         else:
             print("You can see no such item in this room")
-        
+
+    def move(direction):
+        pass
+    
+    print(player["location"] + dungeon[player["location"]]["north"])    
 
 init()   
