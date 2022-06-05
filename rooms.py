@@ -183,3 +183,24 @@ room18 = {
     "south": False,
     "west": False
 }
+
+dungeon = [
+        room1,
+        room2,
+        room3,
+        room4,
+        room5,
+        room6,
+        room7,
+        room8,
+        room9,
+        room10,
+        room11,
+        room12,
+        room13,
+        room14,
+        room15,
+        room16,
+        room17,
+        room18
+    ]
