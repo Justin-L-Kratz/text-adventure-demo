@@ -1,16 +1,20 @@
 potion1 = {
+    "name": "potion",
     "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 potion2 = {
+    "name": "potion",
     "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 potion3 = {
+    "name": "potion",
     "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
 potion4 = {
+    "name": "potion",
     "description": "A potion that restores your vitality, leaving you feeling rejuvinated"
 }
 
