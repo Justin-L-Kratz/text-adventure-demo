@@ -1,4 +1,6 @@
 game_state = True
+game_over = False
+game_end = False
 
 def init():
     import rooms
@@ -31,6 +33,9 @@ def init():
         target["hp"] -= 5
         battle_text = "You attack {} for 5 damage"
         print(battle_text.format(target["name"]))
+
+    def use(item):
+        pass
 
     attack(rooms.enemies.kobold0)
 
